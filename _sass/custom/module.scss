@@ -96,3 +96,10 @@
     }
   }
 }
+
+
+
+// 解决课程模块日期换行的问题
+.module > dl > dt {
+  white-space: nowrap;
+}

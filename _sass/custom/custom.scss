@@ -49,3 +49,36 @@ summary {
     }
   }
 }
+
+// 1. 定义网格容器
+.staff-grid {
+  display: grid;
+  // 自动填充尽可能多的列，每列最小350px，最大1fr (占据可用空间的一份)
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem; // 设置卡片之间的间距
+  margin-top: 1rem; // 和标题之间留出一些距离
+}
+
+// 2. 移除单个教员卡片的默认垂直 margin，因为网格已经有了 gap
+.staff-grid .staffer {
+  margin: 0;
+}
+
+// 3. (推荐) 让 Office Hour(s) 标题加粗，和截图一致
+.staff-grid .staffer-meta dt {
+  font-weight: bold;
+}
+
+.image-row {
+  display: flex;            // 开启 Flexbox 布局
+  justify-content: center;  // 让图片在行内水平居中
+  align-items: flex-start;  // 如果图片高度不同，让它们顶部对齐
+  gap: 1rem;                // 在图片之间添加 1rem (约16px) 的间距
+  margin: 1.5rem 0;         // 在图片行的上方和下方添加一些垂直间距
+}
+
+// 确保行内的图片能自适应宽度
+.image-row img {
+  width: 50%; /* 尝试让每张图片占据一半宽度，但会被 max-width 限制 */
+  height: auto; /* 保持图片的宽高比 */
+}
