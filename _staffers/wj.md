@@ -1,9 +1,9 @@
 ---
 name: 王晶
 role: Instructor
-email: me@example.com
+email: jwang@ruc.edu.cn
 
-photo: example.png
+photo: w.jpg
 meta:
   上课地点: 教三1303
 ---

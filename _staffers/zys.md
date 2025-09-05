@@ -1,9 +1,9 @@
 ---
 name: 张延松
 role: Instructor
-email: me@example.com
+email: zhangys_ruc@hotmail.com
 
-photo: example.png
+photo: z.jpg
 meta:
   上课地点: 教三1303
 ---
